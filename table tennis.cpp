@@ -8,7 +8,7 @@ void score(int x)
 	{
 		if(str[i] == 'W')a++;
 		if(str[i] == 'L')b++;
-		if((a >= x || b >= x) && (max(a,b) - min(a,b) >= 2))
+		if((a >= x || b >= x) && (max(a,b) - min(a,b) >= 2))//分数到达分制数(11/21)才会开始判断分差
 		{
 			cout<<a<<':'<<b<<endl;
 			a = 0;
